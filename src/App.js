@@ -37,7 +37,7 @@ class App extends Component {
         <div>
           Enter text: <input type="text" value={this.state.userInput} onChange={(event) => this.updateOutput(event)}/>
           <p>{this.state.userInput}</p>
-          <ValidationComponent userInput={this.state.userInput}/>
+          <ValidationComponent userInputLength={this.state.userInput.length}/>
         </div>
 
         {characters}
