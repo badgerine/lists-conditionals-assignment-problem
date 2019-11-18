@@ -7,9 +7,9 @@ class ValidationComponent extends Component {
 
     render(){
         
-        const outputMessage = 5 > this.props.userInputLength ? 'Text too short' : 
+        let outputMessage = 5 > this.props.userInputLength ? 'Text too short' : 
                             'Text long enough'; 
-        const view = (
+        let view = (
             <div>{outputMessage + ': '+  this.props.userInputLength}</div>);
 
         return view;
